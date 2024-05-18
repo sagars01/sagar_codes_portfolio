@@ -1,21 +1,26 @@
 "use client"
 import Head from 'next/head';
 import PortfolioShowcase from './portfolio';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import OptionCards from './optionsCards';
 import HeadersRow from './headers';
 import Jumbotron from './jumbotron';
+import AboutMeSection from './aboutme';
 
 
 
 export default function Home() {
-    const portfolioRef = useRef(null);
-    const scrollToPortfolio = () => {
-        setTimeout(() => {
-            if (portfolioRef.current) {
-                portfolioRef.current.scrollIntoView({ behavior: 'smooth' });
-            }
-        }, 500); // Adjust the delay (in milliseconds) as needed
+    const [innerHeight, setInnerHeight] = useState('100vh')
+    useEffect(() => {
+        if (window) {
+            setInnerHeight(window.innerHeight)
+        }
+    }, [])
+    const targetDivRef = useRef(null);
+    const handleScrollToDiv = () => {
+        if (targetDivRef.current) {
+            targetDivRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     };
 
     return (
@@ -26,18 +31,16 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <HeadersRow />
-            <main className=" min-h-100 flex flex-col items-center justify-center text-gray-800 relative mb-10">
-
-
+            <main style={{ height: innerHeight }} className="min-h-100 flex flex-col items-center text-gray-800 relative">
                 <Jumbotron />
-
-                <OptionCards scrollToPortfolio={scrollToPortfolio} />
-
-
-                {/* <PortfolioShowcase ref={portfolioRef} /> */}
-
-
+                <OptionCards scrollToPortfolio={handleScrollToDiv} />
             </main>
+
+            {/* About me section will come here */}
+
+            <AboutMeSection targetRef={targetDivRef} innerHeight={innerHeight} />
+
+            <PortfolioShowcase />
         </>
     );
 }

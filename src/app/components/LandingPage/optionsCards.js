@@ -3,13 +3,10 @@ import Card from "../Common/Card"
 const OptionCards = ({ scrollToPortfolio }) => {
     return (
         <>
-
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <Card
                     title="About Me"
                     description="Learn about my background, experience, and interests."
-                    link="/about"
                     onClick={scrollToPortfolio}
                 />
                 <Card
