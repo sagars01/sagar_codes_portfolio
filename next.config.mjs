@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    env: {
+        metadataBase: 'https://www.withjessi.com'
+    },
+};
 
 export default nextConfig;
