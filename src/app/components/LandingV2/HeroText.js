@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
-import constants from '../Common/constants/LandingV2.json'
+import constants from '../Common/constants/landingV2.js'
 
 const iconsMap = {
     email: <FaEnvelope />,

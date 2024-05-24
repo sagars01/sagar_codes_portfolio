@@ -1,4 +1,4 @@
-{
+export default {
     "heroText": {
         "name": "Sagar",
         "greeting": "Hi, I'm Sagar 👋",
