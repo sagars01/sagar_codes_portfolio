@@ -2,15 +2,18 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaReact, FaNodeJs, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGolang } from "react-icons/fa6";
+import { BiLogoPostgresql, BiLogoMongodb } from "react-icons/bi";
+
 
 const OrbitingIcons = () => {
     const icons = [
-        { id: 1, icon: <FaGithub size={24} />, duration: 10 },
+        { id: 1, icon: <FaGolang size={24} />, duration: 10 },
         { id: 2, icon: <FaNodeJs size={24} />, duration: 12 },
         { id: 3, icon: <FaReact size={24} />, duration: 14 },
-        { id: 4, icon: <FaLinkedin size={24} />, duration: 16 },
-        { id: 5, icon: <FaTwitter size={24} />, duration: 18 }
+        { id: 4, icon: <BiLogoPostgresql size={24} />, duration: 16 },
+        { id: 5, icon: <BiLogoMongodb size={36} />, duration: 18 }
     ];
 
     return (
