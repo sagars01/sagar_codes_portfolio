@@ -11,16 +11,20 @@ const panelVariants = {
 
 const InformationPanel = ({ section }) => {
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            variants={panelVariants}
-            transition={{ duration: 0.5 }}
-        >
-            {section === 'Work' && <WorkSection />}
-            {section === 'Contact' && <ContactForm />}
-        </motion.div>
+        <div id='informationPanel' >
+            <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={panelVariants}
+                transition={{ duration: 0.5 }}
+            >
+                {section === 'Work' && <WorkSection />}
+                <div style={{ width: "100%", height: "auto" }}>
+                    {section === 'Contact' && <ContactForm />}
+                </div>
+            </motion.div>
+        </div>
     );
 };
 

@@ -47,6 +47,18 @@ export default {
                 "name": "WithJessi",
                 "highlightText": "AI Recruiter",
                 "url": "https://withjessi.com"
+            },
+            {
+                "id": '1',
+                "name": "WithJessi",
+                "highlightText": "AI Recruiter",
+                "url": "https://withjessi.com"
+            },
+            {
+                "id": '1',
+                "name": "WithJessi",
+                "highlightText": "AI Recruiter",
+                "url": "https://withjessi.com"
             }
         ]
     }
