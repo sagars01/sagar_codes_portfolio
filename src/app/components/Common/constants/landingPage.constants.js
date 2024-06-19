@@ -2,21 +2,23 @@ export default {
     "heroText": {
         "name": "Sagar",
         "greeting": "Hi, I'm Sagar 👋",
-        "description": "I'm a staff software engineer with an interest in",
+        "description": "I'm a Staff Software Engineer with an interest in",
         "rotatingTexts": [
-            "Software Architecture",
-            "Scaling Backend to Millions",
-            "UX and Frontend Engineering",
-            "Database Optimisation for Billion Records"
+            "Artificial Intelligence",
+            "Cloud Architecture",
+            "Frontend Engineering",
+            "Scaling Tech Teams"
         ],
         "buttons": [
             {
                 "text": "View My Work",
-                "href": "#work"
+                "href": "#work",
+                "action": "Work"
             },
             {
                 "text": "Contact Me",
-                "href": "#contact"
+                "href": "#contact",
+                "action": "Contact"
             }
         ],
         "contactIcons": [
@@ -35,6 +37,16 @@ export default {
             {
                 "type": "twitter",
                 "href": "https://twitter.com/sagar_codes"
+            }
+        ]
+    },
+    "work": {
+        "projects": [
+            {
+                "id": '1',
+                "name": "WithJessi",
+                "highlightText": "AI Recruiter",
+                "url": "https://withjessi.com"
             }
         ]
     }

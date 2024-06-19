@@ -1,9 +1,9 @@
-import LandingV2 from "./components/LandingV2/landingV2";
+import LandingPageMainComponent from "./components/landingPage/LandingPageMain";
 
 export default function Home() {
   return (
     <>
-      <LandingV2 />
+      <LandingPageMainComponent />
     </>
   );
 }

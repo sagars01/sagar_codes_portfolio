@@ -1,10 +1,8 @@
-// components/HeroText.js
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
-import constants from '../Common/constants/landingV2.js'
+import constants from '../common/constants/landingPage.constants';
 
 const iconsMap = {
     email: <FaEnvelope />,
@@ -15,47 +13,50 @@ const iconsMap = {
     youtube: <FaYoutube />
 };
 
-const HeroText = () => {
+const HeroText = ({ setActiveSection }) => {
     const { greeting, description, rotatingTexts, buttons, contactIcons } = constants.heroText;
     const [index, setIndex] = useState(0);
+
 
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex(prev => (prev + 1) % rotatingTexts.length);
-        }, 5000); // Change text every 5 seconds
+        }, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [rotatingTexts.length]);
 
     return (
-        <div className="font-sans">
-            <h1 className="text-5xl font-bold mb-4">
+        <div className="font-sans text-center lg:text-left p-4 lg:p-8">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
                 {greeting}
             </h1>
-            <p className="text-xl mb-4">
+            <p className="text-base sm:text-lg lg:text-xl mb-4">
                 {description}
             </p>
-            <div className="relative h-12"> {/* Fixed height to match the text height */}
-                <AnimatePresence>
+            <div className="relative h-8 mb-8">
+                <AnimatePresence initial={false}>
                     <motion.div
                         key={rotatingTexts[index]}
                         initial={{ opacity: 0, rotateX: 90 }}
                         animate={{ opacity: 1, rotateX: 0 }}
                         exit={{ opacity: 0, rotateX: -90 }}
                         transition={{ duration: 0.5 }}
-                        className="absolute w-full text-2xl font-bold"
+                        className="absolute w-full text-lg sm:text-xl lg:text-2xl font-bold"
                     >
                         {rotatingTexts[index]}
                     </motion.div>
                 </AnimatePresence>
             </div>
-            <div className="flex space-x-4 mb-8">
+            <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-4 mb-8">
                 {buttons.map(button => (
-                    <a key={button.text} href={button.href} className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800">
+                    <button
+                        onClick={() => setActiveSection(button.action)}
+                        key={button.text} className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-center">
                         {button.text}
-                    </a>
+                    </button>
                 ))}
             </div>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center lg:justify-start">
                 {contactIcons.map(icon => (
                     <a key={icon.type} href={icon.href} className="text-2xl">
                         {iconsMap[icon.type]}

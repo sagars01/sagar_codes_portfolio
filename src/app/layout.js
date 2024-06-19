@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 const imgUrl = "/imgs/og.png";
 
 export const metadata = {
-  title: "Welcome to Sagarmoy Sengupta Web",
-  description: "Sagar Codes Digital Placeholder",
-  metadataBase: new URL("https://www.withjessi.com"),
+  title: "Welcome to Sagarmoy Sengupta Home Page",
+  description: "Sagar Codes Portfolio Website",
+  metadataBase: new URL("https://www.sagarmoy.work"),
   openGraph: {
     title: 'Sagarmoy Sengupta',
     description: 'The calmest person in tech',
