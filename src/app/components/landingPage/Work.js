@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import constants from '../common/constants/landingPage.constants';
+import constants from '../common/constants/landingPage';
 
 const WorkSection = () => {
     const [ogData, setOgData] = useState({});
