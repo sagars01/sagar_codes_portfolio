@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import constants from '../common/constants/landingPage';
+import constants from '../common/constants/primaryUserProfileData';
 
 const WorkSection = () => {
     const [ogData, setOgData] = useState({});
@@ -28,7 +28,7 @@ const WorkSection = () => {
                     {projects.map((project) => (
                         <div key={project.id} className="flex-none border border-gray-300 rounded-lg p-4 w-80">
                             {ogData[project.url] && (
-                                <img src={ogData[project.url].ogImage} alt={project.name} className="w-full rounded-lg mb-4" />
+                                <img src={ogData[project.url].ogImage} alt={project.name} className="w-full rounded-lg mb-4 h-40" />
                             )}
                             <a href={project.url} target='_blank'>
                                 <h3 className="text-xl font-semibold mb-2">{project.name}</h3>

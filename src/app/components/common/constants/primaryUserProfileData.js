@@ -50,14 +50,16 @@ export default {
             },
             {
                 "id": '1',
-                "name": "WithJessi",
-                "highlightText": "AI Recruiter",
-                "url": "https://withjessi.com"
-            },
+                "name": "Work In Progess",
+                "highlightText": "Portfolio Site",
+                "url": "https://sagarmoy.work"
+            }
+        ],
+        "blogs": [
             {
                 "id": '1',
-                "name": "WithJessi",
-                "highlightText": "AI Recruiter",
+                "name": "PostgreSQL",
+                "highlightText": 'Learn PostgreSQL',
                 "url": "https://withjessi.com"
             }
         ]
