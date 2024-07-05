@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 
 export default function ContactTwo() {
-  
+
 
   return (
     <div className="bostami-page-area z-index-3">
@@ -58,7 +58,7 @@ export default function ContactTwo() {
                     I'm always open to discussing produuct
                   </h5>
                   <h5 className="contact-title-b">design work or partnerships.</h5>
-                  <ContactForm/>
+                  <ContactForm />
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function ContactTwo() {
 
           <div className="footer-copyright text-center pt-25 pb-25 bg-light-white-2 border-redius-20">
             <span>
-              © {new Date().getFullYear()} All Rights Reserved by elite-themes24.
+              © {new Date().getFullYear()} All Rights Reserved by Sagar.
             </span>
           </div>
         </div>

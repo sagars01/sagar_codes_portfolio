@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 
-export default function Home1() {
+export default function Home() {
   return (
     <>
       <div className="page-wrapper home-1" id="home-1">

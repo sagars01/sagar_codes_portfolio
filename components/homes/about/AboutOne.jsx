@@ -95,7 +95,7 @@ export default function AboutOne() {
                         <Image
                           height={62}
                           width={264}
-                          style={{ height:'62px',width:'fit-content'}}
+                          style={{ height: '62px', width: 'fit-content' }}
                           className="bostami-client-slider-logo"
                           src={elm.imgSrc}
                           alt="client"
@@ -111,7 +111,7 @@ export default function AboutOne() {
 
         <div className="footer-copyright text-center pt-25 pb-25">
           <span>
-            © {new Date().getFullYear()} All Rights Reserved by elite-themes24.
+            © {new Date().getFullYear()} All Rights Reserved by Sagar.
           </span>
         </div>
       </div>

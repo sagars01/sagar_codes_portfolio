@@ -39,9 +39,8 @@ export default function ResumeTwo() {
                 <div className="bostami-card-wrap mb-50">
                   {education.map((elm, i) => (
                     <div
-                      className={`bostami-card-item ${elm.bgClass} ${
-                        i + 1 != education.length && "mb-20"
-                      } `}
+                      className={`bostami-card-item ${elm.bgClass} ${i + 1 != education.length && "mb-20"
+                        } `}
                     >
                       <span className="card-subtitle">{elm.session}</span>
                       <h6 className="card-title">
@@ -71,9 +70,8 @@ export default function ResumeTwo() {
                   {experiences.map((elm, i) => (
                     <div
                       key={i}
-                      className={`bostami-card-item ${elm.bgClass} ${
-                        i + 1 != experiences.length && "mb-20"
-                      } `}
+                      className={`bostami-card-item ${elm.bgClass} ${i + 1 != experiences.length && "mb-20"
+                        } `}
                     >
                       <span className="card-subtitle">{elm.session}</span>
                       <h6 className="card-title">{elm.role}</h6>
@@ -100,9 +98,8 @@ export default function ResumeTwo() {
                   {awards.map((elm, i) => (
                     <div
                       key={i}
-                      className={`bostami-card-item ${elm.bgClass} ${
-                        i + 1 != awards.length ? "mb-20" : ""
-                      } `}
+                      className={`bostami-card-item ${elm.bgClass} ${i + 1 != awards.length ? "mb-20" : ""
+                        } `}
                     >
                       <span className="card-subtitle">{elm.year}</span>
                       <h6 className="card-title">{elm.role}</h6>
@@ -125,9 +122,8 @@ export default function ResumeTwo() {
                   {skillData.map((elm, i) => (
                     <div
                       key={i}
-                      className={`skill-bar-item ${
-                        i + 1 != skillData.length && "mb-30"
-                      } `}
+                      className={`skill-bar-item ${i + 1 != skillData.length && "mb-30"
+                        } `}
                     >
                       <div className="title-wrap">
                         <h5 className="title">{elm.title}</h5>
@@ -162,7 +158,7 @@ export default function ResumeTwo() {
 
           <div className="footer-copyright text-center pt-25 pb-25">
             <span>
-              © {new Date().getFullYear()} All Rights Reserved by elite-themes24.
+              © {new Date().getFullYear()} All Rights Reserved by Sagar.
             </span>
           </div>
         </div>

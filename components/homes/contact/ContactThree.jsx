@@ -3,7 +3,7 @@
 import ContactForm from "./ContactForm";
 
 export default function ContactThree() {
- 
+
   return (
     <div className="bostami-page-content-wrap">
       <div className="section-wrapper pl-60 pr-60 pt-60">
@@ -16,13 +16,13 @@ export default function ContactThree() {
         <div className="contact-area bg-light-white-2">
           <h5 className="contact-title">I'm always open to discussing produuct</h5>
           <h5 className="contact-title-b">design work or partnerships.</h5>
-          <ContactForm/>
+          <ContactForm />
         </div>
       </div>
 
       <div className="footer-copyright text-center bg-light-white-2 pt-25 pb-25">
         <span>
-          © {new Date().getFullYear()} All Rights Reserved by elite-themes24.
+          © {new Date().getFullYear()} All Rights Reserved by Sagar.
         </span>
       </div>
     </div>
