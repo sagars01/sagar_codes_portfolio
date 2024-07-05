@@ -1,24 +1,32 @@
-import Hero from "@/components/preview/Hero";
-import Buy from "@/components/preview/Buy";
-import CopyRight from "@/components/preview/CopyRight";
-import Demo from "@/components/preview/Demo";
-import Features from "@/components/preview/Features";
-
 import "../public/assets/css/style.css";
+import Header from "@/components/homes/headers/Header";
+import PersonalInfo from "@/components/homes/personalInfo/PersonalInfo";
+import AboutOne from "@/components/homes/about/AboutOne";
+import React from "react";
+
+import MenuTwo from "@/components/homes/menus/MenuTwo";
+
 
 export const metadata = {
-  title: "Preview || Bostami - Professional portfolio NextJS Template",
+  title: "Home | Sagar Sengupta Web World",
   description:
-    "Discover Botami,the most impressive portfolio template for work showcase, blog",
+    "Hire a Senior Leader of Tech",
 };
-export default function page() {
+
+
+export default function Home1() {
   return (
     <>
-      <Hero />
-      <Demo />
-      <Features />
-      <Buy />
-      <CopyRight />
+      <div className="page-wrapper home-1" id="home-1">
+        <Header />
+        <div className="container z-index-3">
+          <div className="row">
+            <PersonalInfo />
+            <AboutOne />
+            <MenuTwo />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
