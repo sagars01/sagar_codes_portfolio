@@ -15,6 +15,7 @@ export default function page() {
         <div className="bostami-page-area z-index-3">
           <div className="container">
             <AboutTwo />
+            <PersonalInfoTwo />
           </div>
         </div>
       </div>
